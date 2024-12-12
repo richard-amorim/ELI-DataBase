@@ -2,6 +2,8 @@ package com.senai.eli.Model;
 
 import java.time.LocalDateTime;
 
+import com.senai.eli.Validator.Usuario.Usuario;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,7 +30,8 @@ public class Admin {
     @Column(name = "senha", nullable = false)    
     private String senha;
 
-    @Column(name = "usuario", nullable = false)    
+    @Column(name = "usuario", nullable = false)
+    @Usuario    
     private String usuario;
 
     @Column(name = "ultimo_acesso", nullable = false)    
